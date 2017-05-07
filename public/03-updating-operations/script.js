@@ -6,10 +6,10 @@ let randomData = () => {
   // this helper function returns random numbers between 0-10
   let random = () => Math.round(Math.random() * 10);
   
-  // let's get the first random number to be the length of data
+  // let's first get random number to be the length of data
   let arrayLength = random();
 
-  // we construct a new array, use the fill method to allow mapping, and map it with random numbers
+  // we construct a new array with random numbers
   return Array.from(new Array(arrayLength), random);
 
 };
